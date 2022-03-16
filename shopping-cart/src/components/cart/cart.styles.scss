@@ -1,0 +1,143 @@
+.cart-modal {
+  position: fixed;
+  z-index: 9998;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+
+  // .cart-modal-container {
+  //width: 85vw;
+
+  .cart-content {
+    background-color: #eae7e7;
+    margin: 10px auto;
+    width: 35%;
+    height: 90%;
+    margin-top: 0px;
+    right: 8%;
+    position: fixed;
+
+    .cart-header {
+      padding: 15px;
+      height: 10%;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & .close {
+        color: white;
+        font-size: 32px;
+        background-color: inherit;
+        cursor: pointer;
+      }
+    }
+    .cart-container {
+      overflow: scroll;
+      height: 70%;
+
+      .price-logo {
+        border-radius: 5px;
+        margin: 10px;
+        background: white;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+      }
+      .cart-empty {
+        justify-content: center;
+        margin: 60px auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+      }
+    }
+
+    .cart-footer {
+      padding: 0.5%;
+      width: inherit;
+      height: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      bottom: 0;
+      flex-direction: column;
+      border: 1px solid lightgray;
+      background-color: white;
+
+      .footer-content {
+        padding-bottom: 6px;
+        font-size: 14px;
+      }
+
+      .custom-button {
+        width: -webkit-fill-available;
+        align-items: center;
+        flex-direction: row;
+        border-radius: 4px;
+        font-family: "Dosis";
+        font-size: 15px;
+      }
+
+      .checkout-btn {
+        justify-content: space-between;
+        display: flex;
+      }
+    }
+  }
+}
+//}
+@media screen and (max-device-width: 480px) {
+  .cart-modal {
+    background-color: transparent;
+
+      .cart-content {
+        padding-top: 40px;
+        width: 100%;
+        height: 90%;
+        right: 0%;
+        margin-top: -20px;
+       
+        .cart-header {
+          color: black;
+          background-color: white;
+          font-weight: 800;
+        }
+      }
+
+      .cart-container {
+        margin-top: 5px;
+      }
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  .cart-modal {
+    background-color: transparent;
+    overflow: hidden;
+
+      .cart-content {
+        padding-top: 30px;
+        width: 100%;
+        height: 90%;
+        right: 0%;
+        
+        .cart-header {
+          color: black;
+          background-color: white;
+          font-weight: 800;
+        }
+      }
+
+      .cart-container {
+        margin-top: 5px;
+      }
+  }
+}

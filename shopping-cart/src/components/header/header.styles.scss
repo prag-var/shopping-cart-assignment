@@ -1,0 +1,130 @@
+.header {
+  width: 100vw;
+  position: relative;
+  margin-bottom: 10px;
+  background: #ffffff;
+  z-index: 999;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+
+  .header-container {
+    width: 85vw;
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-between;
+
+    .logo-container {
+      height: 80%;
+      margin-top: 10px;
+      width: 190px;
+    }
+
+    .options {
+      display: flex;
+      width: 50%;
+      align-items: flex-end;
+      font-weight: bolder;
+
+      .option-1{
+        padding: 25px 20px;
+        cursor: pointer;
+      }
+    }
+
+    .login-cart-section {
+      height: 100%;
+      width: 25%;
+      flex-direction: column;
+      display: flex;
+      cursor: pointer;
+      margin-right: 40px;
+
+      .login-section {
+        height: 40%;
+        font-weight: bolder;
+        padding: 5px;
+        margin-left: auto;
+
+        .option-2{
+          padding: 25px 0px 25px 20px;
+          cursor: pointer;
+        }
+      }
+
+      .cart-section {
+        width: 60%;
+        background-color: lightgrey;
+        align-items: center;
+        display: flex;
+        padding: 15px;
+        cursor: pointer;
+        margin-left: auto;
+        img {
+          filter: invert(20%) sepia(85%) saturate(4760%) hue-rotate(316deg)
+            brightness(83%) contrast(99%);
+          width: 40px;
+        }
+        .item-count {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .header {
+    //text-align: center;
+
+    .header-container {
+      width: 100%;
+      margin-left: 10px;
+      .logo-container{
+        width: 140px;
+      }
+      .options {
+        display: none;
+      }
+      .login-cart-section {
+        width: 70%;
+        margin-right: 0px;
+
+        .login-section{
+          display: none;
+        }
+
+        .cart-section {
+          width: 50%;
+          padding: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  .header {
+    text-align: center;
+
+    .header-container {
+      width: 100%;
+      margin-left: 10px;
+      .logo-container {
+        width: 160px;
+      }
+      
+      .login-cart-section {
+        margin-right: 0px;
+        .login-section{
+          .option-2{
+            padding: auto;
+          }
+        }
+
+        .cart-section {
+          width: 90%;
+          padding: 20px;
+        }
+      }
+    }
+  }
+}

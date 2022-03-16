@@ -1,0 +1,18 @@
+.productListPage {
+  width: 85vw;
+  margin: auto;
+}
+
+@media screen and (max-device-width: 480px) {
+  .productListPage {
+    width: 100vw;
+    margin: 0;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  .productListPage {
+    width: 100vw;
+    margin: 0;
+  }
+}

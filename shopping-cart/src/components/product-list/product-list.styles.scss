@@ -1,0 +1,36 @@
+.product-list {
+    width: 100%;
+    display: flex;
+  
+    .category-description {
+      flex: 5;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .category-dropdown {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-device-width: 480px) {
+    .product-list {
+      margin: auto;
+      flex-direction: column;
+
+      .category-dropdown {
+        display: block;
+      }
+    }
+  }
+  
+  @media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+    .product-list {
+      margin: 0;
+      .category-description {
+        flex: 3;
+      }
+      .category-dropdown {
+        display: none;
+      }
+    }
+  }

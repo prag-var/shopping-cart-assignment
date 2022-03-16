@@ -1,0 +1,28 @@
+.footer {
+  width: 100vw;
+  background: rgb(223, 221, 221);
+  margin: 0px auto;
+  padding: 15px;
+  
+  .footer-content {
+    width: 75%;
+    font-size: 14px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-device-width: 480px) {
+  .footer-content {
+    width: auto;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  .footer-content {
+    width: auto;
+    justify-content: center;
+  }
+}

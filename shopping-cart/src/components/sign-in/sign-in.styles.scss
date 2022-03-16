@@ -1,0 +1,48 @@
+.sign-in {
+  display: flex;
+  flex-direction: row;
+  width: 75vw;
+  margin: 0px auto;
+
+  .signin-content {
+    width: 40%;
+  }
+
+  .signin-form {
+    width: 40%;
+  }
+
+  .custom-button {
+    width: -webkit-fill-available;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .sign-in {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+
+    .signin-content {
+      width: 100%;
+    }
+
+    .signin-form {
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  .sign-in {
+    margin: 0px auto;
+    .signin-content {
+      width: 50%;
+    }
+  
+    .signin-form {
+      width: 50%;
+    }
+  
+  }
+}
